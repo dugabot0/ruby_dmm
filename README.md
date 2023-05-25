@@ -20,35 +20,14 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ```ruby
 cli = RubyDmm.new(api_key: "YOUR_API_KEY", affiliate_id: "YOUR_AFFILIATE_ID")
-response = cli.item(keyword: "杉原杏璃", category: 'idol')
+response = cli.product(site: "DMM.com", keyword: "天使もえ", hits: 5)
 response.body[:result][:items].map {|x| x[:title]}
 =>
-["Last Kiss ～杉原杏璃ファイナルイメージ 杉原杏璃",
- "東京アンリ 杉原杏璃",
- "となりのアンリ 杉原杏璃",
- "白珠杏蜜 杉原杏璃",
- "アンリ先生 杉原杏璃",
- "フェアリー・テール 杉原杏璃",
- "なまアンリ、ゆめアンリ 杉原杏璃",
- "アンリの日記 杉原杏璃",
- "必撮！まるごと☆杉原杏璃2",
- "杏乳 杉原杏璃",
- "ヤングマガジンDVD 透覗 See Through Mode 杉原杏璃",
- "杏limited 杉原杏璃",
- "亜細亜の恋 杉原杏璃",
- "夢の世界へ 杉原杏璃",
- "杏璃～夏ものがたり 杉原杏璃",
- "じーっとみつめて･･･ 杉原杏璃",
- "必撮！まるごと☆杉原杏璃",
- "ボクのアンリ 杉原杏璃",
- "アンブロシア ～美味しいアンリ 杉原杏璃",
- "みすど mis＊dol 杉原杏璃2",
- "杏Lover 杉原杏璃",
- "みすど mis＊dol 杉原杏璃",
- "本当にデカップ 杉原杏璃",
- "杏Sweet 杉原杏璃",
- "杏璃色 杉原杏璃",
- "「杏蜜」 ～An-mitsu～ 杉原杏璃"]
+ ["凶愛 デートレイプ",
+ "FRIDAYデジタル写真集 天使もえ「胸キュンヘアヌード」",
+ "はだか拳Ω",
+ "はだか拳",
+ "ヨドンナ"]
 ```
 
 Refer to [DMM site](https://affiliate.dmm.com/api/) for API details.
