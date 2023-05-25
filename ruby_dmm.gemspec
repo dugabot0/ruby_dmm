@@ -3,7 +3,7 @@
 require_relative "lib/ruby_dmm/version"
 
 Gem::Specification.new do |spec|
-  spec.name = "ruby_dmm"
+  spec.name = "ruby_dmm_cli"
   spec.version = RubyDmm::VERSION
   spec.authors = ["duga_bot"]
   spec.email = ["duga_bot@pm.me"]
