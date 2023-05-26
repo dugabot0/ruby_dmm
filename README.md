@@ -20,7 +20,7 @@ If bundler is not being used to manage dependencies, install the gem by executin
 
 ```ruby
 require "ruby_dmm"
-cli = RubyDmm.new(api_key: "YOUR_API_KEY", affiliate_id: "YOUR_AFFILIATE_ID")
+cli = RubyDmm.new(api_id: "YOUR_API_KEY", affiliate_id: "YOUR_AFFILIATE_ID")
 response = cli.product(site: "DMM.com", keyword: "天使もえ", hits: 5)
 response.body[:result][:items].map {|x| x[:title]}
 =>
